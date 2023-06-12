@@ -1,0 +1,39 @@
+.chessboard {
+    height: 700px;
+    width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .square {
+    border: 1px solid black;
+  }
+
+  .black {
+    background-color: #b58863;
+  }
+
+  .black.selected {
+    background-color: #b0784a;
+  }
+
+  .white {
+    background-color: #f0d9b5;
+  }
+
+.white.selected {
+    background-color: #e0c9a5;
+}
+
+span {
+    font-size: 50px;
+    /* centeralize the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* poninter cursor */
+    cursor: pointer;
+}
